@@ -1,0 +1,79 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - more_oprations
+  - math_operation
+  - add
+  - subtract
+  - multiply
+  - divide
+
+actions:
+  - action_add
+  - action_subtract
+  - action_multiply
+  - action_divide
+
+entities:
+  - num1
+  - num2
+  - operation
+  - number_1
+  - number_2
+
+responses:
+  
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Thank you for choosing me, Hope I made your work easier!! \n Do you have any more to do?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye have a great day!!!"
+
+  utter_result:
+  - text: "Sure lets do"
+
+  utter_greet:
+  - text: "Hey! How are you?Welcome to mathematical chat bot!!"
+
+  utter_available_operations:
+  - text: "I can perform mathematical operations like \n addition \n subtraction \n multiplication \n division."
+
+  utter_ask_number_1:
+  - text: "What is the first number?"
+
+  utter_ask_number_2:
+  - text: "What is the second number?"
+
+  utter_add_response:
+  - text: "The sum of {number_1} and {number_2} is {sum}."
+
+  utter_subtract_response:
+  - text: "The difference between {number_1} and {number_2} is {diff}."
+
+  utter_multiply_response:
+  - text: "The product of {number_1} and {number_2} is {product}."
+
+  utter_divide_response:
+  - text: "{number_1} divided by {number_2} is {quotient}."
+
+  utter_divide_by_zero_response:
+  - text: "Sorry, I can't divide {number_1} by {number_2} because the second number is zero."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

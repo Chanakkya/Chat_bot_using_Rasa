@@ -1,0 +1,135 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: add
+  examples: |
+    - What is {number_1} plus {number_2}?
+    - Please add {number_1} and {number_2}.
+    - Add {number_1} to {number_2}.
+- intent: subtract
+  examples: |
+    - What is {number_1} minus {number_2}?
+    - Please subtract {number_2} from {number_1}.
+    - Subtract {number_2} from {number_1}.
+- intent: multiply
+  examples: |
+    - What is {number_1} times {number_2}?
+    - Please multiply {number_1} and {number_2}.
+    - Multiply {number_1} by {number_2}.
+- intent: divide
+  examples: |
+    - What is {number_1} divided by {number_2}?
+    - Please divide {number_1} by {number_2}.
+    - Divide {number_1} by {number_2}.
+
+#- intent: more_operations
+#  examples: |
+##   - more
+ #   - another operation
+ #   - do more
+
+#- intent: math_operation
+#  examples: |
+#    - what is the sum of [5](num1) and [7](num2)
+#    - [10](num1) divided by [2](num2)
+#    - [6](num1) times [8](num2)
+#    - [20](num1) minus [12](num2)
+#  entities:
+#  - num1
+#  - num2
+#  - operation:
+#    - addition
+#    - subtraction
+#    - multiplication
+#    - division
+
+  
